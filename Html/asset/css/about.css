@@ -35,7 +35,7 @@ header {
 }
 
 header h1 {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
     letter-spacing: 1px;
 }
@@ -368,10 +368,14 @@ p {
     height:100vh;
 }
 .team-introduction .container{
-    padding-top: 10vh;
+    padding-top: 12vh;
 }
 .team-introduction .container h2{
     color: #000;
+    font-family: "Dongle", sans-serif;
+    font-size: 55px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .team-name {
@@ -384,17 +388,22 @@ p {
 }
 
 .team-name h3 {
-    font-size: 28px;
+    font-size: 45px;
     color: #000;
     margin-bottom: 10px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Dongle", sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .team-name p {
-    font-size: 16px;
+    font-size: 30px;
     line-height: 1.8;
     color: #333;
     font-weight: bold;
+    font-family: "Dongle", sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .team-members {
@@ -424,14 +433,20 @@ p {
 }
 
 .member-info h3 {
-    font-size: 20px;
+    font-size: 35px;
     color: #000;
     margin-bottom: 10px;
+    font-family: "Dongle", sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .member-info p {
-    font-size: 16px;
+    font-size: 25px;
     color: #333;
+    font-family: "Dongle", sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /* Footer 스타일 */

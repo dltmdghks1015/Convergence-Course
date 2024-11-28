@@ -3,95 +3,115 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
-        <link href="./asset/css/furniture.css" rel="stylesheet" type="text/css">
+        <title>Luciola - 가구 페이지</title>
+        <link rel="stylesheet" href="./asset/css/furniture.css">
+        <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
         <script src="./asset/js/jquery-3.6.0.js"></script>
         <script src="./asset/js/furniture.js" defer></script>
-        <title>NewBees - Baby Rocking Cradle</title>
     </head>
-
     <body>
         <header>
             <h1><a href="./ko-main.html">Luciola</a></h1>
             <nav>
                 <div class="menu">
-                    <a href="/ko-about.html">프로젝트</a> <!-- About -->
+                    <a href="/ko-about.html">프로젝트</a>
                     <div class="submenu">
-                        <a href="/ko-about.html#ko-about-herotext">프로젝트 배경</a> <!-- Project -->
-                        <a href="/ko-history.html">업사이클링이란?</a> <!-- What is Upcylcing? -->
-                        <a href="/ko-about.html#ko-about-herotext">우리 팀</a> <!-- Team -->
+                        <a href="/ko-about.html#ko-projectbackground">프로젝트 개요</a>
+                        <a href="/ko-about.html#ko-whatupcycle">업사이클링이란</a>
+                        <a href="/ko-about.html#ko-teamintroduction">팀 소개</a>
                     </div>
                 </div>
                 <div class="menu">
-                    <a href="/ko-furniture.html">가구</a> <!-- Furniture -->
+                    <a href="/ko-furniture.html">가구</a>
                     <div class="submenu">
-                        <a href="/ko-categories.html">가구 디자인 과정</a> <!-- Design Process -->
-                        <a href="/ko-custom.html">가구 제작 과정</a> <!-- Furniture Process -->
+                        <a href="./ko-furniture.html">가구 디자인 과정</a>
+                        <a href="./ko-furniture.html#furniture-production-test">가구 제작 과정</a>
                     </div>
                 </div>
-                <a href="/ko-gallery.html">갤러리</a> <!-- Gallery -->
+                <a href="/ko-gallery.html">갤러리</a>
                 <div class="menu">
-                    <a>언어</a> <!-- Language -->
+                    <a>언어</a>
                     <div class="submenu">
                         <a href="/ko-main.html">한국어</a>
                         <a href="/lang/en.html">English</a>
                     </div>
                 </div>
-            </nav>            
+            </nav>
         </header>
 
-        <section class="hero">
-            <div class="hero-text">
-                <h2>Luciola</h2>
-                <p>
-                    NewBees의 업사이클링 프로젝트에 오신 것을 환영합니다.<br> 우리는 버려진 가구에 새로운 생명을 불어넣어 환경을 보호하고,<br>
-                    아이들을 위한 따뜻하고 안전한 공간을 만듭니다. 이번 프로젝트의 주인공은 아기 흔들침대이며,<br> 지속 가능성과 창의적인 디자인이 결합된 특별한 가구입니다.
-                </p>
-                <button>Learn More</button>
-            </div>
-            <img src="https://img.freepik.com/free-vector/flat-design-stages-baby-girl-illustration_23-2148986563.jpg?ga=GA1.1.1567139329.1729601558&semt=ais_hybrid" alt="Hero Image">
-        </section>
-
-        <section class="products">
-            <img src="https://img.freepik.com/free-vector/fantastic-baby-room-with-smiling-baby_23-2147586152.jpg?ga=GA1.1.1567139329.1729601558&semt=ais_hybrid" alt="Product Image">
-            <div>
-                <h2>제품 소개</h2>
-                <p>
-                    "Baby Rocking Cradle – 재탄생하는 흔들침대"는 낡은 아기 침대와 흔들 가구를 결합해<br>새로운 흔들침대를 만드는 프로젝트입니다.
-                </p>
-                <ul>
-                    <li>재사용된 재료: 원목, 천연 패브릭, 기존 의자 부품</li>
-                    <li>안전성: 아이들의 안전을 고려한 모든 코너 마감</li>
-                    <li>디자인: 부모의 감성을 고려한 따뜻한 색상과 모던한 스타일</li>
-                </ul>
-            </div>
-            <div>
-                <h2>Who we are</h2>
-                <p>
-                    NewBees는 창의성과 열정으로 뭉친 4명의 젊은 디자이너들로 구성된 팀입니다. 우리의 철학은 단순한 업사이클링을 넘어서, 새로운 가치를 만드는 것입니다.
-                </p>
-                <ol>
-                    <li>이승환 - 기술 개발 담당</li>
-                    <li>김나영 - 가구 제작 담당</li>
-                    <li>천예원 - 프레젠테이션 담당</li>
-                    <li>유준서 - 가구 제작 담당</li>
-                </ol>
-            </div>
-            <img src="https://img.freepik.com/free-vector/cute-bee-with-muscle-cartoon-vector-icon-illustration-animal-nature-icon-isolated-flat-vector_138676-12975.jpg?semt=ais_hybrid" alt="Additional Image">
-        </section>
+        <main>
+            <section id="design-process" class="process-section">
+                <h2>디자인 프로세스</h2>
+                <div class="process-content">
+                    <div class="process-item">
+                        <h3>2D 작업</h3>
+                        <p>AutoCAD 프로그램을 사용하여 가구의 설계 도면을 제작하였습니다. 가구 스케치를 바탕으로, 치수를 정확히 측정하고 평면적으로 표현한 것입니다.</p>
+                        <ul>
+                            <li>Top View: 가구의 상단에서 본 평면도를 작성하여 전체적인 크기와 구조를 명확히 표현했습니다.</li>
+                            <li>Front View: 정면에서 본 가구의 모습을 그려 세부적인 높이와 디자인 요소를 강조했습니다.</li>
+                            <li>Side View: 측면도를 통해 깊이와 구조를 시각적으로 확인할 수 있도록 도면을 완성했습니다.</li>
+                        </ul>
+                        <p>마지막으로 어떤 자재를 사용했는지에 대해 표기를 했습니다.</p>
+                    </div>
+                    <div class="process-item">
+                        <h3>모델링 작업</h3>
+                        <p>3D 모델링은 설계 도면을 기반으로 구체적인 입체 형상을 만드는 과정입니다. Rhino 프로그램을 사용하여 가구의 3D 모델을 제작했습니다. Rhino는 곡선과 다양한 형태를 정밀하게 표현할 수 있어 복잡한 형상도 매끄럽게 구현할 수 있어 이 프로그램을 사용하여 가구의 실제 사이즈에 맞게 만들어 보았습니다.</p>
+                    </div>
+                    <div class="process-item" >
+                        <h3>재질 표현</h3>
+                        <p id="furniture-production-test">완성된 3D 모델의 현실감을 더하기 위해 KeyShot 프로그램을 사용하여 재질 표현을 진행하였습니다. KeyShot은 렌더링 소프트웨어로, 조명, 텍스처, 색상 등을 세밀하게 조정하여 모델의 실제 재질감을 시뮬레이션할 수 있습니다. 이번 작업에서는 나무 재질을 적용해 가구의 완성된 이미지를 표현하였으며, <br>이를 통해 가구가 완성된 후의 모습을 시각적으로 확인할 수 있었습니다.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- <hr id = "furniture-production-section"> -->
+            <section id="furniture-production" class="process-section">
+                <h2>가구 제작 과정</h2>
+                <div class="process-content">
+                    <div class="process-item">
+                        <h3>1. 분해 단계</h3>
+                        <p>먼저 기존 의자를 톱을 사용하여 분해하였습니다. 분해 과정에서는 의자의 구조와 결합 방식을 자세히 분석하였고, 각 부품의 치수를 측정하여 도면 제작 시 <br>참고자료로 활용했습니다. 이 단계는 새로운 설계와 조립을 위한 기초 작업이었습니다.</p>
+                    </div>
+                    <div class="process-item">
+                        <h3>2. 사포질 단계</h3>
+                        <p>분해된 각 부품의 표면에 남아 있는 코팅을 사포를 사용해 꼼꼼히 제거하였습니다. 또한, 기존 부품에 있던 구멍은 목재용 본드와 다보를 사용하여 메우고 <br>표면을 매끄럽게 다듬었습니다. 이 과정은 재조립 시 강도를 높이고, 새로운 디자인에 부합하는 표면 처리를 위해 필수적이었습니다.</p>
+                    </div>
+                    <div class="process-item">
+                        <h3>3. 추가 부품 제작 단계</h3>
+                        <p>필요한 추가 부품은 CNC 가공 기술을 사용하여 제작하였습니다. CNC는 정밀한 치수로 부품을 제작할 수 있어 조립 과정에서 높은 완성도를 보장합니다. <br>제작된 부품은 사포질을 통해 표면을 매끄럽게 처리하여 조립에 적합하도록 준비하였습니다.</p>
+                    </div>
+                    <div class="process-item">
+                        <h3>4. 조립 단계</h3>
+                        <p>모든 부품을 조립하는 단계에서는 클램프와 목재용 본드를 사용하여 견고하게 고정했습니다. 특히, 각 부품의 결합은 구조적 안정성을 확보하기 위해 <br>세심한 주의가 필요했습니다. 조립 후에는 연결 부위의 균형을 확인하여 가구 안정적으로 설계되었는지 점검했습니다.</p>
+                    </div>
+                    <div class="process-item">
+                        <h3>5. 바니쉬 단계</h3>
+                        <p>조립이 완료된 가구에 마감 작업으로 바니쉬를 여러 차례 도포하였습니다. 바니쉬 작업 전후로 사포질을 반복하며 표면을 부드럽게 만들고, <br>최종적으로 가구의 질감과 내구성을 향상시켰습니다. 이 작업은 가구의 전체적인 완성도를 높이는 중요한 과정이었습니다.</p>
+                    </div>
+                    <div class="process-item">
+                        <h3>6. 추가 작업</h3>
+                        <p>가구 제작 과정 외에도 필요한 부속품을 추가로 제작하였습니다.</p>
+                        <ul>
+                            <li>매트: 별도로 자재를 구매하여 의자와 잘 어울리는 매트를 제작하였습니다.</li>
+                            <li>모빌: 처음에는 직접 제작할 계획이었으나, 시간 제약으로 인해 구매한 제품을 사용하였습니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
 
         <footer>
             <div>
                 <h3>NewBees</h3>
-                <p>&copy; 2024.NewBees All rights reserved.<br></p>
+                <p>&copy; 2024.NewBees All rights reserved.</p>
             </div>
             <div>
-                <p>Contact: <a href="mailto:newbees@upcycle.com">newbees@upcycle.com</a></p>
+                <p>Contact: <a href="mailto:newbees@example.com">newbees@example.com</a></p>
                 <p>Social Media: @NewBeesUpcycle</p>
                 <p>Location: 서울특별시 중랑구 용마산로90길 28, Seoil University</p>
             </div>
         </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="furniture-script.js"></script>
     </body>
 </html>

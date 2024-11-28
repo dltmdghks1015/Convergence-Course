@@ -9,14 +9,14 @@ body {
 
 /* 헤더 스타일 */
 header {
-    background-color: #ffdd57;
+    background-color: #ffe066;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    height: 74px;
-    border-bottom: 2px solid #000;
+    height: 80px;
+    border-bottom: 1px solid #a6681f;
 }
 
 header h1 {
@@ -194,7 +194,7 @@ nav a:hover::after {
     border-radius: 15px;
     width: 30%;
     margin-right: 12vh;
-    border: 3px solid #6d5d5d;
+    border: 2px solid #6d5d5d;
 }
 
 .hero-text button:hover {
