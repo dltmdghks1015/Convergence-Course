@@ -1,0 +1,471 @@
+/* 전체 페이지 스타일 */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    scroll-behavior: smooth;
+
+}
+
+/* 헤더 스타일 */
+/* 메뉴 바 스타일 */
+/* header {
+    background-color: #ffdd57;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 74px;
+} */
+
+header {
+    background-color: #ffe066;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #a6681f;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+header h1 a{
+    text-decoration : none;
+    color : #333333;
+}
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    position: relative;
+}
+
+.menu {
+    
+    position: relative;
+}
+
+/* 메뉴 항목 기본 스타일 */
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #333;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000; /* 배경색 검은색 */
+    color: #fff; /* 텍스트 흰색 */
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.submenu a {
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #fff; /* 서브메뉴 링크 흰색 */
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s; /* 부드러운 전환 효과 */
+}
+
+.submenu a:hover {
+    background-color: #555; /* 배경색 밝은 회색으로 변경 */
+    color: #ffdd57; /* 글씨는 강조된 노란색 */
+}
+
+/* 메뉴 밑줄 애니메이션 */
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px; /* 밑줄 두께 조정 */
+    background-color: #ffdd57; /* 밝은 노란색 밑줄 */
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease-in-out; /* 부드러운 전환 */
+}
+
+nav a:hover::after {
+    width: 100%; /* 애니메이션으로 밑줄 표시 */
+}
+
+/* 서브메뉴 스타일
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.menu:hover .submenu {
+    display: block;
+}
+
+.submenu a {
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+}
+
+.submenu a:hover {
+    background-color: #333;
+    color: #fff;
+}
+.submenu {
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu:hover .submenu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+} */
+
+/* 공통 스타일 */
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 10px;
+    
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2c3e50; /* 진한 네이비 컬러 */
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333333; /* 연한 네이비 톤 */
+}
+
+/* 프로젝트 배경 섹션 */
+/* 프로젝트 배경 섹션 */
+/* .project-background {
+    background: #ffdd57;
+    padding: 60px 20px;
+    color: white;
+    height : 700px;
+} */
+.project-background {
+    background: #ffdd57;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px 0px; /* 상단 패딩을 늘려 헤더 아래로 내용이 보이게 함 */
+}
+.project-background .container{
+    padding-top: 90px;
+}
+
+.background-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.background-text{
+    background: #FFF8DC;
+    border-radius: 10px;
+    border : 1px solid #8a5e1c;
+    
+    width: 550px;
+    height: 370px;
+}
+
+.background-text h2 {
+    color: #000;
+    padding-left:20px;
+    font-family: "Dongle", sans-serif;
+    font-size: 60px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.background-text p{
+    color : #333333;
+    padding : 5px 20px 5px 20px;
+    font-family: "Dongle", sans-serif;
+    font-size: 29px;
+    margin: 0px;
+    padding-top: 0px;
+}
+.background-image{
+    
+    margin-right: 40px;
+}
+
+.background-image img {
+    width: 550px;
+    height: 370px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid #8a5e1c;
+}
+
+.summary-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top : 1vh;
+}
+
+.summary-text{
+    width: 550px;
+    height: 370px;
+    background: #FFF8DC;
+    border-radius: 10px;
+    border : 1px solid #8a5e1c;
+    margin-right: 40px;
+}
+
+.summary-text h2 {
+    color: #000;
+    padding-left:20px;
+    font-family: "Dongle", sans-serif;
+    font-size: 60px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.summary-text p{
+    color : #333333;
+    padding : 5px 20px 5px 20px;
+    font-family: "Dongle", sans-serif;
+    font-size: 29px;
+    margin: 0px;
+    padding-top: 0px;
+}
+
+.summary-image{
+    margin-right : 7vh;
+    
+}
+.summary-image img {
+    width: 550px;
+    height: 370px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid #8a5e1c;
+    
+}
+
+/* 업사이클링 섹션  */
+.what-is-upcycling {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background: #8a5e1c; 
+
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    height: 100vh;
+}
+
+
+.upcycling-image {
+    display: flex;
+    justify-content: center; /* 이미지 중앙 정렬 */
+    align-items: center;
+    flex: 1;
+    margin-top: 80px;
+}
+
+
+.upcycling-image img {
+    width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border : 1px solid #8a5e1c;
+}
+.upcycling-text{
+    background: white;
+    border-radius: 10px;
+    margin-top : 30px;
+    border : 1px solid #ffdd57;
+}
+
+.upcycling-text h2 {
+    color: #000;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top : 0px;
+    font-family: "Dongle", sans-serif;
+    font-size: 65px;
+
+}
+.upcycling-text p{
+    text-align: center;
+    padding-bottom : 10px;
+    font-family: "Dongle", sans-serif;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 0px 20px;
+}
+
+/* 팀 소개 섹션 */
+.team-introduction {
+    background: #ffdd57;    
+    padding: 0px 20px;
+    height:100vh;
+}
+.team-introduction .container{
+    padding-top: 10vh;
+}
+.team-introduction .container h2{
+    color: #000;
+}
+
+.team-name {
+    text-align: center;
+    margin-top : 7vh;
+    margin-bottom: 9vh;
+    padding: 10px 20px 10px 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.team-name h3 {
+    font-size: 28px;
+    color: #000;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.team-name p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    font-weight: bold;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(45% - 20px); /* 유연한 크기 */
+}
+
+.member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #f39c12;
+}
+
+.member-info h3 {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.member-info p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Footer 스타일 */
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+footer div h3, footer div p {
+    margin: 5px 0;
+}
+
+footer div p{
+    color:white;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #ffdd57;
+    text-decoration: none;
+}
+
+
+/* 애니메이션 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

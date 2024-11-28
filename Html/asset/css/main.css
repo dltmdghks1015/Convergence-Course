@@ -1,0 +1,268 @@
+/* 전체 페이지 스타일 */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #ffdd57;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 74px;
+    border-bottom: 2px solid #000;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+nav {
+    display: flex;
+    gap: 15px;
+    position: relative;
+}
+
+.menu {
+    position: relative;
+}
+
+/* 메뉴 항목 기본 스타일 */
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #333;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000; /* 배경색 검은색 */
+    color: #fff; /* 텍스트 흰색 */
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.submenu a {
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #fff; /* 서브메뉴 링크 흰색 */
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s; /* 부드러운 전환 효과 */
+}
+
+.submenu a:hover {
+    background-color: #555; /* 배경색 밝은 회색으로 변경 */
+    color: #ffdd57; /* 글씨는 강조된 노란색 */
+}
+
+/* 메뉴 밑줄 애니메이션 */
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px; /* 밑줄 두께 조정 */
+    background-color: #ffdd57; /* 밝은 노란색 밑줄 */
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease-in-out; /* 부드러운 전환 */
+}
+
+nav a:hover::after {
+    width: 100%; /* 애니메이션으로 밑줄 표시 */
+}
+
+/* 서브메뉴 스타일
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.menu:hover .submenu {
+    display: block;
+}
+
+.submenu a {
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+}
+
+.submenu a:hover {
+    background-color: #333;
+    color: #fff;
+}
+.submenu {
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu:hover .submenu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+} */
+
+/* Hero Section 스타일 */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    height: 700px;
+    background: linear-gradient( #ffdd57 60%, #fafad2);
+}
+
+.hero-text {
+    max-width: 50%;
+    animation: fadeIn 1.5s ease-in-out;
+    margin-left: 110px;
+}
+
+.hero-text h2 {
+    font-size: 60px;
+    margin-bottom: 15px;
+    
+}
+
+.hero-text p {
+    font-size: 40px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: "Dongle", sans-serif;
+
+}
+.hero-text strong{
+    font-size: 50px;
+}
+.hero-text button {
+    padding: 15px 30px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero img{
+    border-radius: 15px;
+    width: 30%;
+    margin-right: 12vh;
+    border: 3px solid #6d5d5d;
+}
+
+.hero-text button:hover {
+    background-color: #555;
+}
+
+/* Products Section */
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 80px 50px;
+    background : linear-gradient(0deg,#fafad2 70%,#fafad2)
+}
+.products h2{
+    font-size: 80px;
+    font-family: "Dongle", sans-serif;
+}
+
+.products img {
+    width: 70%;
+    height: 90%;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    border: 2px solid #000;
+}
+
+ul, ol {
+    padding-left: 20px;
+    font-family: "Dongle", sans-serif;
+}
+.products p{
+    font-size: 40px;
+    font-family: "Dongle", sans-serif;
+    font-weight: bold;
+}
+.products li{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Footer 스타일 */
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+footer div h3, footer div p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #ffdd57;
+    text-decoration: none;
+}
+
+/* 애니메이션 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
