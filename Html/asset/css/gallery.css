@@ -101,9 +101,20 @@ main {
 
 /* Before & After */
 #before-after {
-    margin: 50px 0;
-    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* 세로 정렬 */
+    justify-content: space-between; /* 이미지와 버튼을 화면에 맞게 분배 */
+    height: 100vh; /* 전체 뷰포트 높이 사용 */
+    padding: 0; /* 여백 제거 */
 }
+#before-after-dropdown-container {
+    display: flex; /* 수평 배치 */
+    gap: 20px; /* Before & After와 드롭다운 메뉴 간 간격 */
+    align-items: stretch; /* 위쪽 맞춤 */
+    height: 100vh;
+}
+
 #before-after h2{
     font-family: "Dongle", sans-serif;
     font-size: 50px;
@@ -115,27 +126,23 @@ main {
 
 /* Before & After 컨테이너 */
 .before-after-container {
+    flex: 1; /* 가변 높이 */
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
     position: relative;
-    width: 100%;
-    max-width: 800px;
-    height: 850px; /* 고정된 높이 설정 */
-    margin: 0 auto;
-    overflow: hidden; /* 초과 부분 숨기기 */
-    border-radius: 10px; /* 부드러운 모서리 */
-    background-color: #fff; /* 배경 설정 */
+    overflow: hidden;
 }
 
-/* Before & After 이미지 */
 /* Before & After 이미지 */
 .before, .after {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 1s ease-in-out; /* 부드러운 전환 */
-    z-index: 1; /* 기본 z-index */
+    width: 100%; /* 가로 100% 채움 */
+    height: calc(100% - 50px); /* 전체 높이에서 버튼 높이(50px)를 뺀 영역 */
+    object-fit: cover; /* 이미지 비율 유지 */
+    transition: opacity 1s ease-in-out;
 }
 
 /* 초기 상태 */
@@ -168,7 +175,8 @@ main {
 
 
 #toggle-btn {
-    margin-top: 20px;
+    margin : 10px auto;
+    margin-bottom: 150px;
     padding: 10px 30px;
     background-color: #8a5e1c;
     color: #fff;
@@ -177,6 +185,8 @@ main {
     border-radius: 5px;
     font-family: "Dongle", sans-serif;
     font-size: 30px;
+    height: 50px;
+    align-self: center;
 }
 
 #toggle-btn:hover {
@@ -184,6 +194,20 @@ main {
 }
 
 /* Dropdown */
+#process-dropdown {
+    flex: 1; /* Before & After와 같은 크기로 설정 */
+    display: flex;
+    flex-direction: column; /* 세로 정렬 */
+    gap: 10px;
+}
+.dropdown {
+    display : flex;
+    gap : 10px;
+}
+.dropdown-item{
+    display: inline-block;
+}
+
 #process-dropdown h2 {
     font-family: "Dongle", sans-serif;
     font-size:50px;
@@ -195,7 +219,7 @@ main {
     border: 1px solid #a6681f;
     padding: 10px 20px;
     cursor: pointer;
-    width: 100%;
+    width: auto;
     height: 60px;
     text-align: center;
     border-radius: 5px;

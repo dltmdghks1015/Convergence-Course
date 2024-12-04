@@ -194,7 +194,6 @@ nav a:hover::after {
     border-radius: 15px;
     width: 30%;
     margin-right: 12vh;
-    border: 2px solid #6d5d5d;
 }
 
 .hero-text button:hover {
@@ -220,7 +219,6 @@ nav a:hover::after {
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     margin: auto;
-    border: 2px solid #000;
 }
 
 ul, ol {
