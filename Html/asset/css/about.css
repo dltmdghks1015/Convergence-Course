@@ -44,19 +44,14 @@ header h1 a{
     color : #333333;
 }
 nav {
-    flex-grow: 1;
     display: flex;
-    justify-content: flex-end;
     gap: 15px;
-    position: relative;
 }
 
 .menu {
-    
     position: relative;
 }
 
-/* 메뉴 항목 기본 스타일 */
 nav a {
     margin: 0 15px;
     text-decoration: none;
@@ -69,25 +64,27 @@ nav a {
 nav a::after {
     content: '';
     position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: #333;
+    width: 0%;
+    height: 3px; /* 밑줄 두께 조정 */
+    background-color: #ffeea8; /* 밝은 노란색 밑줄 */
     bottom: -5px;
     left: 0;
-    transition: width 0.3s;
+    transition: width 0.3s ease-in-out; /* 부드러운 전환 */
 }
 
 nav a:hover::after {
-    width: 100%;
+    width: 100%; /* 애니메이션으로 밑줄 표시 */
 }
+
 
 .submenu {
     display: none;
+    flex-direction: row;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #000; /* 배경색 검은색 */
-    color: #fff; /* 텍스트 흰색 */
+    background-color: #ffe479;
+    color: #fff;
     padding: 10px 15px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -96,34 +93,21 @@ nav a:hover::after {
 }
 
 .submenu a {
-    display: block;
+    display: inline-block;
     margin: 5px 0;
-    text-decoration: none;
-    color: #fff; /* 서브메뉴 링크 흰색 */
+    color: #000;
     font-size: 16px;
     padding: 5px 10px;
-    transition: background-color 0.3s, color 0.3s; /* 부드러운 전환 효과 */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav .menu.language-menu .submenu{
+    flex-direction: column!important; /* 수직 정렬 */    
 }
 
 .submenu a:hover {
-    background-color: #555; /* 배경색 밝은 회색으로 변경 */
-    color: #ffdd57; /* 글씨는 강조된 노란색 */
-}
-
-/* 메뉴 밑줄 애니메이션 */
-nav a::after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 3px; /* 밑줄 두께 조정 */
-    background-color: #ffdd57; /* 밝은 노란색 밑줄 */
-    bottom: -5px;
-    left: 0;
-    transition: width 0.3s ease-in-out; /* 부드러운 전환 */
-}
-
-nav a:hover::after {
-    width: 100%; /* 애니메이션으로 밑줄 표시 */
+    background-color: #ffeea8;
+    color: #000;
 }
 
 /* 서브메뉴 스타일
@@ -200,7 +184,7 @@ p {
     height : 700px;
 } */
 .project-background {
-    background: #ffdd57;
+    background: #ffe479;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -311,7 +295,7 @@ p {
     align-items: center;
     justify-content: center;
     gap: 40px;
-    background: linear-gradient(to top, #8a5e1c 90%, #ffdd57 100%);
+    background: linear-gradient(to top, #a17e49 90%, #ffe479 100%);
 
     height: 100vh;
 }
@@ -362,7 +346,7 @@ p {
 
 /* 팀 소개 섹션 */
 .team-introduction {
-    background: linear-gradient(to top,#ffdd57 90% ,#8a5e1c 100%);    
+    background: linear-gradient(to top,#ffe479 90% ,#a17e49 100%);    
     padding: 0px 20px;
     height:100vh;
 }

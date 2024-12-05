@@ -1,7 +1,7 @@
 body {
     margin: 0;
     
-    background-color: #ffdd57;
+    background-color: #ffe479;
     color: #333;
 }
 
@@ -53,7 +53,7 @@ nav a::after {
     position: absolute;
     width: 0%;
     height: 3px; /* 밑줄 두께 조정 */
-    background-color: #ffdd57; /* 밝은 노란색 밑줄 */
+    background-color: #ffeea8; /* 밝은 노란색 밑줄 */
     bottom: -5px;
     left: 0;
     transition: width 0.3s ease-in-out; /* 부드러운 전환 */
@@ -66,10 +66,11 @@ nav a:hover::after {
 
 .submenu {
     display: none;
+    flex-direction: row;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #000;
+    background-color: #ffe479;
     color: #fff;
     padding: 10px 15px;
     border-radius: 8px;
@@ -79,17 +80,21 @@ nav a:hover::after {
 }
 
 .submenu a {
-    display: block;
+    display: inline-block;
     margin: 5px 0;
-    color: #fff;
+    color: #000;
     font-size: 16px;
     padding: 5px 10px;
     transition: background-color 0.3s, color 0.3s;
 }
 
+nav .menu.language-menu .submenu{
+    flex-direction: column!important; /* 수직 정렬 */    
+}
+
 .submenu a:hover {
-    background-color: #555;
-    color: #ffdd57;
+    background-color: #ffeea8;
+    color: #000;
 }
 
 main {
@@ -101,10 +106,10 @@ main {
 
 .process-section {
     margin-bottom: 50px;
-    background-color: #fff;
+    
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
 }
 
 #design-process {
@@ -120,6 +125,8 @@ h2 {
 .process-item {
     margin-bottom: 30px;
 }
+
+
 
 h3 {
     font-family: 'Dongle', sans-serif;
@@ -144,6 +151,33 @@ ul {
     border: 0px;
     margin-top: 0;
     margin-bottom: 100px;
+}
+
+#furniture-production h2{
+    font-size: 60px;
+}
+#furniture-production h3{
+    font-size: 50px;
+}
+.image-container img{
+    width: 100%;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+.image-container21{
+    margin: 20px;
+}
+.image-container22{
+    margin: 20px;
+}
+.image-container2{
+    display: flex; /* Flexbox 활성화 */
+    justify-content: center; /* 가로 방향 중앙 정렬 */
+}
+.image-container2 img{
+    width: 100%;
+    border-radius: 10px;
+
 }
 /* Footer 스타일 */
 footer {

@@ -27,14 +27,12 @@ header h1 {
 nav {
     display: flex;
     gap: 15px;
-    position: relative;
 }
 
 .menu {
     position: relative;
 }
 
-/* 메뉴 항목 기본 스타일 */
 nav a {
     margin: 0 15px;
     text-decoration: none;
@@ -47,25 +45,27 @@ nav a {
 nav a::after {
     content: '';
     position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: #333;
+    width: 0%;
+    height: 3px; /* 밑줄 두께 조정 */
+    background-color: #ffeea8; /* 밝은 노란색 밑줄 */
     bottom: -5px;
     left: 0;
-    transition: width 0.3s;
+    transition: width 0.3s ease-in-out; /* 부드러운 전환 */
 }
 
 nav a:hover::after {
-    width: 100%;
+    width: 100%; /* 애니메이션으로 밑줄 표시 */
 }
+
 
 .submenu {
     display: none;
+    flex-direction: row;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #000; /* 배경색 검은색 */
-    color: #fff; /* 텍스트 흰색 */
+    background-color: #ffe479;
+    color: #fff;
     padding: 10px 15px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -74,34 +74,21 @@ nav a:hover::after {
 }
 
 .submenu a {
-    display: block;
+    display: inline-block;
     margin: 5px 0;
-    text-decoration: none;
-    color: #fff; /* 서브메뉴 링크 흰색 */
+    color: #000;
     font-size: 16px;
     padding: 5px 10px;
-    transition: background-color 0.3s, color 0.3s; /* 부드러운 전환 효과 */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav .menu.language-menu .submenu{
+    flex-direction: column!important; /* 수직 정렬 */    
 }
 
 .submenu a:hover {
-    background-color: #555; /* 배경색 밝은 회색으로 변경 */
-    color: #ffdd57; /* 글씨는 강조된 노란색 */
-}
-
-/* 메뉴 밑줄 애니메이션 */
-nav a::after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 3px; /* 밑줄 두께 조정 */
-    background-color: #ffdd57; /* 밝은 노란색 밑줄 */
-    bottom: -5px;
-    left: 0;
-    transition: width 0.3s ease-in-out; /* 부드러운 전환 */
-}
-
-nav a:hover::after {
-    width: 100%; /* 애니메이션으로 밑줄 표시 */
+    background-color: #ffeea8;
+    color: #000;
 }
 
 /* 서브메뉴 스타일
@@ -154,7 +141,7 @@ nav a:hover::after {
     align-items: center;
     padding: 80px;
     height: 700px;
-    background: linear-gradient( #ffdd57 60%, #fafad2);
+    background: linear-gradient( #ffe479 60%, #fafad2);
 }
 
 .hero-text {

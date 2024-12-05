@@ -6,6 +6,7 @@
         <title>Luciola - 가구 페이지</title>
         <link rel="stylesheet" href="./asset/css/furniture.css">
         <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
         <script src="./asset/js/jquery-3.6.0.js"></script>
         <script src="./asset/js/furniture.js" defer></script>
     </head>
@@ -29,7 +30,7 @@
                     </div>
                 </div>
                 <a href="/ko-gallery.html">갤러리</a>
-                <div class="menu">
+                <div class="menu language-menu">
                     <a>언어</a>
                     <div class="submenu">
                         <a href="/ko-main.html">한국어</a>
@@ -46,47 +47,81 @@
                     <div class="process-item">
                         <h3>2D 작업</h3>
                         <p>AutoCAD 프로그램을 사용하여 가구의 설계 도면을 제작하였습니다. 가구 스케치를 바탕으로, 치수를 정확히 측정하고 평면적으로 표현한 것입니다.</p>
-                        <ul>
-                            <li>Top View: 가구의 상단에서 본 평면도를 작성하여 전체적인 크기와 구조를 명확히 표현했습니다.</li>
-                            <li>Front View: 정면에서 본 가구의 모습을 그려 세부적인 높이와 디자인 요소를 강조했습니다.</li>
-                            <li>Side View: 측면도를 통해 깊이와 구조를 시각적으로 확인할 수 있도록 도면을 완성했습니다.</li>
-                        </ul>
-                        <p>마지막으로 어떤 자재를 사용했는지에 대해 표기를 했습니다.</p>
                     </div>
+                    <span class="material-symbols-outlined">
+                        arrow_downward
+                        </span>
                     <div class="process-item">
                         <h3>모델링 작업</h3>
-                        <p>3D 모델링은 설계 도면을 기반으로 구체적인 입체 형상을 만드는 과정입니다. Rhino 프로그램을 사용하여 가구의 3D 모델을 제작했습니다. Rhino는 곡선과 다양한 형태를 정밀하게 표현할 수 있어 복잡한 형상도 매끄럽게 구현할 수 있어 이 프로그램을 사용하여 가구의 실제 사이즈에 맞게 만들어 보았습니다.</p>
+                        <p>Rhino 프로그램을 사용하여 가구의 3D 모델을 제작했습니다. Rhino를 통해 구현가능한지 보기 위해 사용했습니다.</p>
+                        <div class="image-container">
+                            <img class="2d-img" src="/asset/img/2Dprocess.jpg">
+                        </div>
+                        <span class="material-symbols-outlined">
+                            arrow_downward
+                            </span>
                     </div>
                     <div class="process-item" >
                         <h3>재질 표현</h3>
-                        <p id="furniture-production-test">완성된 3D 모델의 현실감을 더하기 위해 KeyShot 프로그램을 사용하여 재질 표현을 진행하였습니다. KeyShot은 렌더링 소프트웨어로, 조명, 텍스처, 색상 등을 세밀하게 조정하여 모델의 실제 재질감을 시뮬레이션할 수 있습니다. 이번 작업에서는 나무 재질을 적용해 가구의 완성된 이미지를 표현하였으며, <br>이를 통해 가구가 완성된 후의 모습을 시각적으로 확인할 수 있었습니다.</p>
+                        <p>완성된 3D 모델의 현실감을 더하기 위해 KeyShot 프로그램을 사용하여 재질 표현을 진행했습니다.<br>
+                            이를 통해 가구가 완성된 후의 모습을 시각적으로 확인할 수 있었습니다.
+                            </p>
+                            <div class="image-container2">
+                                <div class="image-container21">
+                                    <img src="/asset/img/furniture-graphic1.jpg">
+                                </div>
+                                <div class="image-container22">
+                                    <img src="/asset/img/furniture-graphic2.jpg">
+                                </div>
+                            </div>
                     </div>
                 </div>
             </section>
-            <!-- <hr id = "furniture-production-section"> -->
+            <p id="furniture-production-test" style="margin-top: -120px; padding-top: 120px;">
+                <!-- 컨텐츠 -->
+            </p>
             <section id="furniture-production" class="process-section">
                 <h2>가구 제작 과정</h2>
                 <div class="process-content">
                     <div class="process-item">
                         <h3>1. 분해 단계</h3>
-                        <p>먼저 기존 의자를 톱을 사용하여 분해하였습니다. 분해 과정에서는 의자의 구조와 결합 방식을 자세히 분석하였고, 각 부품의 치수를 측정하여 도면 제작 시 <br>참고자료로 활용했습니다. 이 단계는 새로운 설계와 조립을 위한 기초 작업이었습니다.</p>
+                        <p>먼저, 기존 의자를 톱을 사용하여 분해하였습니다. 
+                        </p>
                     </div>
+                    <span class="material-symbols-outlined">
+                        arrow_downward
+                        </span>
                     <div class="process-item">
-                        <h3>2. 사포질 단계</h3>
-                        <p>분해된 각 부품의 표면에 남아 있는 코팅을 사포를 사용해 꼼꼼히 제거하였습니다. 또한, 기존 부품에 있던 구멍은 목재용 본드와 다보를 사용하여 메우고 <br>표면을 매끄럽게 다듬었습니다. 이 과정은 재조립 시 강도를 높이고, 새로운 디자인에 부합하는 표면 처리를 위해 필수적이었습니다.</p>
+                        <h3>2. 추가 부품 제작 단계</h3>
+                        <p>필요한 추가 부품은 CNC 가공 기술을 사용하여 제작하였습니다.</p>
                     </div>
+                    <span class="material-symbols-outlined">
+                        arrow_downward
+                        </span>
                     <div class="process-item">
-                        <h3>3. 추가 부품 제작 단계</h3>
-                        <p>필요한 추가 부품은 CNC 가공 기술을 사용하여 제작하였습니다. CNC는 정밀한 치수로 부품을 제작할 수 있어 조립 과정에서 높은 완성도를 보장합니다. <br>제작된 부품은 사포질을 통해 표면을 매끄럽게 처리하여 조립에 적합하도록 준비하였습니다.</p>
+                        <h3>3. 사포질 단계</h3>
+                        <p>분해된 각 부품의 표면에 남아 있는 코팅을 사포를 사용해 제거하였습니다.<br>
+                            추가 제작된 부품 또한 사포질을 통해 표면을 매끄럽게 처리하였습니다.
+                            </p>
                     </div>
+                    <span class="material-symbols-outlined">
+                        arrow_downward
+                        </span>
                     <div class="process-item">
                         <h3>4. 조립 단계</h3>
-                        <p>모든 부품을 조립하는 단계에서는 클램프와 목재용 본드를 사용하여 견고하게 고정했습니다. 특히, 각 부품의 결합은 구조적 안정성을 확보하기 위해 <br>세심한 주의가 필요했습니다. 조립 후에는 연결 부위의 균형을 확인하여 가구 안정적으로 설계되었는지 점검했습니다.</p>
+                        <p>목재용 본드와 가구를 고정시키는 기구를  사용하여 조립하였습니다.</p>
                     </div>
+                    <span class="material-symbols-outlined">
+                        arrow_downward
+                        </span>
                     <div class="process-item">
                         <h3>5. 바니쉬 단계</h3>
-                        <p>조립이 완료된 가구에 마감 작업으로 바니쉬를 여러 차례 도포하였습니다. 바니쉬 작업 전후로 사포질을 반복하며 표면을 부드럽게 만들고, <br>최종적으로 가구의 질감과 내구성을 향상시켰습니다. 이 작업은 가구의 전체적인 완성도를 높이는 중요한 과정이었습니다.</p>
+                        <p>조립이 완료된 가구에 마감 작업으로 바니쉬를 여러 차례 도포하였습니다.<br>바니쉬 작업 전후로 사포질을 반복하며 표면을 부드럽게 만들었습니다.
+                        </p>
                     </div>
+                    <span class="material-symbols-outlined">
+                        arrow_downward
+                        </span>
                     <div class="process-item">
                         <h3>6. 추가 작업</h3>
                         <p>가구 제작 과정 외에도 필요한 부속품을 추가로 제작하였습니다.</p>

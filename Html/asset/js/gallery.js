@@ -1,19 +1,25 @@
 $(document).ready(function () {
-    $('.menu').hover(
+     // 일반 메뉴
+     $('.menu').hover(
         function () {
-            $(this).find('.submenu')
-                .stop(true, true)
-                .css('opacity', 0)
-                .slideDown(300)
-                .animate({ opacity: 1 }, { queue: false, duration: 300 });
+            const submenu = $(this).find('.submenu');
+            if ($(this).hasClass('language-menu')) {
+                // 언어 메뉴는 수직 정렬로 표시
+                submenu.css({
+                    display: 'flex', // 동적으로 flex 적용
+                    flexDirection: 'column', // 수직 정렬 유지
+                }).stop(true, true).slideDown(200);
+            } else {
+                submenu.stop(true, true).slideDown(200); // 일반 메뉴 동작
+            }
         },
         function () {
-            $(this).find('.submenu')
-                .stop(true, true)
-                .animate({ opacity: 0 }, { queue: false, duration: 300 })
-                .slideUp(300);
+            $(this).find('.submenu').stop(true, true).slideUp(200); // 마우스를 떼면 숨김
         }
     );
+
+    // 페이지 로드 시 서브 메뉴 숨기기
+    $('.submenu').hide();
 });
 document.addEventListener("DOMContentLoaded", () => {
     const toggleBtn = document.getElementById("toggle-btn");
@@ -49,30 +55,33 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-    const dropdownButtons = document.querySelectorAll(".dropdown-btn");
+document.querySelectorAll('.image-carousel').forEach(carousel => {
+    const images = carousel.querySelector('.carousel-images');
+    const prevButton = carousel.querySelector('.carousel-prev');
+    const nextButton = carousel.querySelector('.carousel-next');
+    const imageCount = images.children.length; // 슬라이더에 포함된 이미지 개수
+    const imagesPerView = 4; // 한 번에 보여줄 이미지 수
+    const imageWidth = 300; // 이미지 하나의 너비 (px)
+    const gap = 10; // 이미지 간의 여백 (px)
+    const maxIndex = Math.ceil(imageCount - imagesPerView); // 최대 이동 가능한 인덱스
+    let currentIndex = 0;
 
-    dropdownButtons.forEach(button => {
-        button.addEventListener("click", () => {
-            const dropdownContent = button.nextElementSibling;
-            const isOpen = dropdownContent.classList.contains("open");
+    // 슬라이더의 총 너비를 설정
+    images.style.width = `${imageCount * (imageWidth + gap)}px`;
 
-            // 닫기: 다른 드롭다운 닫기
-            document.querySelectorAll(".dropdown-content.open").forEach(content => {
-                if (content !== dropdownContent) {
-                    content.classList.remove("open");
-                    content.style.maxHeight = null; // 높이를 초기화
-                }
-            });
+    // 이전 버튼 이벤트
+    prevButton.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex -= 1; // 인덱스 감소
+            images.style.transform = `translateX(-${currentIndex * (imageWidth + gap)}px)`; // 슬라이드 이동
+        }
+    });
 
-            // 현재 드롭다운 토글
-            if (isOpen) {
-                dropdownContent.classList.remove("open");
-                dropdownContent.style.maxHeight = null; // 높이를 초기화하여 접기
-            } else {
-                dropdownContent.classList.add("open");
-                dropdownContent.style.maxHeight = dropdownContent.scrollHeight + "px"; // 컨텐츠 높이에 맞게 펼치기
-            }
-        });
+    // 다음 버튼 이벤트
+    nextButton.addEventListener('click', () => {
+        if (currentIndex < maxIndex) {
+            currentIndex += 1; // 인덱스 증가
+            images.style.transform = `translateX(-${currentIndex * (imageWidth + gap)}px)`; // 슬라이드 이동
+        }
     });
 });
