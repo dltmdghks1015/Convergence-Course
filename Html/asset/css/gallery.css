@@ -25,6 +25,11 @@ header h1 {
     letter-spacing: 1px;
 }
 
+h2{
+    font-family: "Dongle", sans-serif;
+    font-size : 40px;
+}
+
 header h1 a {
     text-decoration: none;
     color: #333333;
@@ -118,6 +123,7 @@ main {
     gap: 20px; /* Before & After와 드롭다운 메뉴 간 간격 */
     align-items: stretch; /* 위쪽 맞춤 */
     height: 100vh;
+    margin-bottom: 20vh;
 }
 
 #before-after h2{
