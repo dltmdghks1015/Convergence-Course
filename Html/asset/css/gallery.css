@@ -123,7 +123,7 @@ main {
     gap: 20px; /* Before & After와 드롭다운 메뉴 간 간격 */
     align-items: stretch; /* 위쪽 맞춤 */
     height: 100vh;
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
 }
 
 #before-after h2{
