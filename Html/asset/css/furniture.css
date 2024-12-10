@@ -1,16 +1,16 @@
 body {
     margin: 0;
     
-    background-color: #ffe479;
+    background-color: #FAFAA0;
     color: #333;
 }
 
 header {
-    background-color: #ffe066;
+    background-color: #ffe88d;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 10px 50px;
     position: fixed;
     top: 0;
     left: 0;
@@ -120,13 +120,26 @@ h2 {
     font-size: 55px;
     color: #8a5e1c;
     margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.divider {
+    margin: 0px auto;
+    width: 12%; /* h3와 같은 너비로 설정 */
+    height: 2px; /* 구분선의 두께 */
+    background-color: #333; /* 구분선 색상 */
+
 }
 
 .process-item {
     margin-bottom: 30px;
+    position: relative;
+    text-align: center;
 }
 
-
+.process-item h3{
+    margin-bottom: 0px;
+}
 
 h3 {
     font-family: 'Dongle', sans-serif;

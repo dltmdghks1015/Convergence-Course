@@ -1,16 +1,16 @@
 body {
     margin: 0;
-    background-color: #ffe479;
+    background-color: #FAFAA0;
     color: #333;
 }
 
 
 header {
-    background-color: #ffe066;
+    background-color: #ffe88d;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 10px 50px;
     position: fixed;
     top: 0;
     left: 0;
@@ -115,7 +115,7 @@ main {
     display: flex;
     flex-direction: column; /* 세로 정렬 */
     justify-content: space-between; /* 이미지와 버튼을 화면에 맞게 분배 */
-    height: 1000px; /* 전체 뷰포트 높이 사용 */
+    height: 100vh; /* 전체 뷰포트 높이 사용 */
     padding: 0; /* 여백 제거 */
 }
 #before-after-dropdown-container {
@@ -132,7 +132,7 @@ main {
     margin-bottom: 10px;
 }
 .before-after-container img{
-    height: 100%;
+    height: 80%;
     width: auto;
     border-radius: 10px;
     position: absolute;
@@ -194,6 +194,7 @@ main {
 
 #toggle-btn {
     margin : 10px auto;
+    margin-top: 0;
     margin-bottom: 150px;
     padding: 5px 30px;
     padding-bottom: 50px;
@@ -299,27 +300,35 @@ main {
     color: #fff;
 }
 
+
+.furniture-tour{
+    width :100%;
+}
+
 .image-carousel {
     display: flex;
     align-items: center;
     position: relative;
-    gap: 10px;
     overflow: hidden;
     margin: 20px 0;
-    width: calc(300px * 4 + 10px * 3); /* 4개의 이미지 + 3개의 여백 */
+    width: calc(300px * 4 + 30px * 3);
 }
 
 .carousel-images {
     display: flex;
     transition: transform 0.5s ease;
-    width: auto; /* 자식 요소의 크기에 맞춰 조정 */
+    flex-wrap: nowrap;
 }
 
 .carousel-images img {
     width: 300px;
-    margin-right: 10px;
+    flex-shrink: 0;
+    margin-right: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.carousel-images img:last-child{
+    margin-right: 0;
 }
 
 .carousel-prev, .carousel-next {
@@ -346,6 +355,7 @@ main {
 .carousel-prev:hover, .carousel-next:hover {
     background-color: #a6681f;
 }
+
 
 
 

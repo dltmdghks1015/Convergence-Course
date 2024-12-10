@@ -62,7 +62,7 @@ document.querySelectorAll('.image-carousel').forEach(carousel => {
     const imageCount = images.children.length; // 슬라이더에 포함된 이미지 개수
     const imagesPerView = 4; // 한 번에 보여줄 이미지 수
     const imageWidth = 300; // 이미지 하나의 너비 (px)
-    const gap = 10; // 이미지 간의 여백 (px)
+    const gap = 30; // 이미지 간의 여백 (px)
     const maxIndex = Math.ceil(imageCount - imagesPerView); // 최대 이동 가능한 인덱스
     let currentIndex = 0;
 

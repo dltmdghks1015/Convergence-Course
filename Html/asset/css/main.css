@@ -9,11 +9,11 @@ body {
 
 /* 헤더 스타일 */
 header {
-    background-color: #ffe066;
+    background-color: #ffe88d;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 10px 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: 80px;
     border-bottom: 1px solid #a6681f;
