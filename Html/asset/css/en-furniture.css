@@ -137,6 +137,33 @@ h2 {
     background-color: #333; /* 구분선 색상 */
 
 }
+.divider3 {
+    margin: 0px auto;
+    width: 20%; /* h3와 같은 너비로 설정 */
+    height: 2px; /* 구분선의 두께 */
+    background-color: #333; /* 구분선 색상 */
+
+}
+.divider4 {
+    margin: 0px auto;
+    width: 27%; /* h3와 같은 너비로 설정 */
+    height: 2px; /* 구분선의 두께 */
+    background-color: #333; /* 구분선 색상 */
+
+}.divider5 {
+    margin: 0px auto;
+    width: 22%; /* h3와 같은 너비로 설정 */
+    height: 2px; /* 구분선의 두께 */
+    background-color: #333; /* 구분선 색상 */
+
+}
+.divider6 {
+    margin: 0px auto;
+    width: 37%; /* h3와 같은 너비로 설정 */
+    height: 2px; /* 구분선의 두께 */
+    background-color: #333; /* 구분선 색상 */
+
+}
 
 
 .process-item {

@@ -222,7 +222,7 @@ p {
 }
 
 .background-text p{
-    color : #000;
+    color : #333;
     padding : 5px 20px 5px 20px;
     font-family: "Gamja Flower", sans-serif;
     font-size: 23px;
@@ -267,7 +267,7 @@ p {
 }
 
 .summary-text p{
-    color : #000;
+    color : #333;
     padding : 5px 20px 5px 20px;
     font-family: "Gamja Flower", sans-serif;
     font-size: 23px;
@@ -336,8 +336,8 @@ p {
 .upcycling-text p{
     text-align: center;
     padding-bottom : 10px;
-    font-family: "Dongle", sans-serif;
-    font-size: 30px;
+    font-family: "Gamja Flower", sans-serif;
+    font-size: 25px;
     margin-top: 0px;
     margin-bottom: 10px;
     padding: 0px 20px;

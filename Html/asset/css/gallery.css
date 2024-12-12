@@ -356,7 +356,12 @@ main {
     background-color: #a6681f;
 }
 
-
+.carousel-item p{
+    font-family: "Gamja Flower", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 30px;
+}
 
 
 
