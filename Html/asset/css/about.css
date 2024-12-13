@@ -192,7 +192,7 @@ p {
     padding: 0px 20px 0px; /* 상단 패딩을 늘려 헤더 아래로 내용이 보이게 함 */
 }
 .project-background .container{
-    padding-top: 90px;
+    padding-top: 100px;
 }
 
 .background-content {
@@ -311,10 +311,11 @@ p {
 
 
 .upcycling-image img {
-    width: 35%;
+    width: 27%;
     border-radius: 50%;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     border : 1px solid #8a5e1c;
+    
 }
 .upcycling-text{
     
@@ -348,7 +349,7 @@ p {
 .team-introduction {
     background: linear-gradient(to top,#FAFAA0 90% ,#a17e49 100%);    
     padding: 0px 20px;
-    height:160vh;
+    height:1600px;
 }
 .team-introduction .container{
     padding-top: 12vh;
