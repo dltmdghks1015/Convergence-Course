@@ -157,11 +157,11 @@ h3 {
 }
 
 p, ul {
-    font-family: 'Dongle', sans-serif;
-    font-size: 30px;
+    font-family: "Gamja Flower", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
     line-height: 1.6;
 }
-
 ul {
     list-style: none; /* 기본 불릿 제거 */
     padding: 0; /* 기본 패딩 제거 */
@@ -184,6 +184,19 @@ ul {
     width: 100%;
     margin-bottom: 40px;
     border-radius: 10px;
+}
+.image-container3{
+    display: flex; /* Flexbox 활성화 */
+    justify-content: center; /* 가로 방향 중앙 정렬 */
+}
+.image-container23{
+    margin: 25px;
+}
+.image-container24{
+    margin: 25px;
+}
+.image-container3 img{
+    width : 80%;
 }
 .image-container21{
     margin: 20px;
